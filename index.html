@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        .mybox {
+            /* position: fixed; */
+            left: 20px;
+            top: 40px;
+            background-color: black;
+            color: beige;
+        }
+        .some-section{
+            position: relative;
+            top: 50px;
+            left: 50px;
+       
+        }
+        .abs {
+            position: absolute;
+
+            top: 20px;
+            left: 20px;
+           
+        }
+        .relative {
+            position: relative;
+        }
+        .last-section {
+            /* position: fixed; */
+            border: 2px solid blue;
+            font-size: 100px;
+            position: fixed;
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="mybox">
+        <h1>Understanding Selectors</h3>
         <p>This is the first child element</p>
         <p>This is the second child element</p>
         <section>
@@ -11,5 +44,59 @@
             <p>This is the second descendant element</p>
         </section>
     </div>
+    <div >
+        <p>This is a p tag</p>
+        <h1>Understanding Selectors</h3>
+            <p>This is the first child element</p>
+            <p>This is the second child element</p>
+            <section>
+                <p>This is the first descendant element</p>
+                <p>This is the second descendant element</p>
+            </section>
+        <h1>Understanding Selectors</h3>
+            <p>This is the first child element</p>
+            <p>This is the second child element</p>
+            <section class="some-section">
+                <p>This is the first descendant element</p>
+                <p>This is the second descendant element</p>
+            </section>
+                <h1>Understanding Selectors</h3>
+                    <p>This is the first child element</p>
+                    <p>This is the second child element</p>
+                    <div class="relative">
+                        <section>
+                            <p>Some content goes inside here</p>
+                            <p>Some content goes inside of here</p>
+                            <p>Some content goes inside of here</p>
+                        </section>
+                        <section class="abs">
+                            <p>This is the first descendant element</p>
+                            <p>This is the second descendant element</p>
+                        </section>
+                    </div>
+                    
+                    <h1>Understanding Selectors</h3>
+                        <p>This is the first child element</p>
+                        <p>This is the second child element</p>
+                        <section>
+                            <p>This is the first descendant element</p>
+                            <p>This is the second descendant element</p>
+                        </section>
+                        <h1>Understanding Selectors</h3>
+                            <p>This is the first child element</p>
+                            <p>This is the second child element</p>
+                            <section class="last-section">
+                                <p>This is the first descendant element</p>
+                                <p>This is the second descendant element</p>
+                            </section>
+                            <h1>Understanding Selectors</h3>
+                                <p>This is the first child element</p>
+                                <p>This is the second child element</p>
+                                <section>
+                                    <p>This is the first descendant element</p>
+                                    <p>This is the second descendant element</p>
+                                </section>
+    </div>
+
 </body>
 </html>
